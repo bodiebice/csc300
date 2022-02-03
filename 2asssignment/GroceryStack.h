@@ -6,24 +6,25 @@ using std::string;
 
 class GroceryStack
 {
-  private:
+private:
     struct GStack
     {
-      string product;
-      int value;
-      float price;
-      GStack *next;
+        string product;
+        int value;
+        float price;
+        GStack* next;
     };
-    GStack *top;
+    GStack* top;
 
-    void getFile();
+    
     void pushFile(string n, int v, float p);
 
-  public:
+public:
     GroceryStack();
     bool isFile();
+    void getFile();
     void printInfo(int x)const;
-    int printSum()const;
+    //int  printSum()const;
 
 
 };

@@ -9,7 +9,10 @@ using namespace std;
 
 int main()
 {
-  GroceryStack x;
-  x.printInfo(3);
-  return 0;
+	bool tf;
+	GroceryStack x;
+	tf = x.isFile();
+	x.getFile();
+	x.printInfo(3);
+	return 0;
 }
