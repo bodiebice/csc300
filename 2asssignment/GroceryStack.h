@@ -16,15 +16,15 @@ private:
     };
     GStack* top;
 
-    
-    void pushFile(string n, int v, float p);
+    float countSum(GStack*,float)const;
+    void pushFile(string, int, float);
 
 public:
     GroceryStack();
     bool isFile();
     void getFile();
-    void printInfo(int x)const;
-    //int  printSum()const;
+    void printInfo(int)const;
+    float printSum()const;
 
 
 };
